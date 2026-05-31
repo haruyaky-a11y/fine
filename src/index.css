@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Oxanium:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Noto Sans KR', sans-serif;
+  --font-display: 'Oxanium', 'Noto Sans KR', sans-serif;
+  
+  --color-brand-gold-50: #fefdf0;
+  --color-brand-gold-100: #fef9c3;
+  --color-brand-gold-200: #fef08a;
+  --color-brand-gold-300: #fde047;
+  --color-brand-gold-400: #facc15;
+  --color-brand-gold-500: #eab308;
+  --color-brand-gold-600: #ca8a04;
+  --color-brand-gold-700: #a16207;
+  --color-brand-gold-800: #854d0e;
+  --color-brand-gold-900: #713f12;
+  
+  --color-titan-dark-50: #f8fafc;
+  --color-titan-dark-100: #f1f5f9;
+  --color-titan-dark-200: #e2e8f0;
+  --color-titan-dark-300: #cbd5e1;
+  --color-titan-dark-400: #94a3b8;
+  --color-titan-dark-500: #64748b;
+  --color-titan-dark-600: #475569;
+  --color-titan-dark-700: #334155;
+  --color-titan-dark-800: #0a0b0e;
+  --color-titan-dark-900: #0e1015;
+  --color-titan-dark-950: #050608;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-titan-dark-950);
+  color: #f1f5f9;
+}
+
+/* Custom Webkit scrollbar for premium theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #232a35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #eab308;
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.15);
+}
+
+.glow-gold-hover:hover {
+  box-shadow: 0 0 25px rgba(234, 179, 8, 0.3);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 12px rgba(234, 179, 8, 0.4);
+}
